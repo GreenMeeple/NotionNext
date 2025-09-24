@@ -43,7 +43,7 @@ function SiteInfo({ title }) {
           <a
             href='https://github.com/tangly1024/NotionNext'
             className='underline'>
-            NotionNext {siteConfig('VERSION')}
+             NotionNext {siteConfig('VERSION')}
           </a>
         </span>
         <br />
