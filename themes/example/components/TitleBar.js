@@ -28,6 +28,7 @@ export default function TitleBar(props) {
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post?.pageIcon} />
             )}
+            {title}
           </h1>
           <p className='title-2 relative leading-loose text-gray-dark z-10'>
           </p>
