@@ -10,7 +10,8 @@ export default function TitleBar(props) {
   const { post } = props
   const { fullWidth, siteInfo } = useGlobal()
 
-  const title = post?.title || siteConfig('TITLE')
+  // const title = post?.title || siteConfig('TITLE')
+  const title = post?.title || ''
   const description = post?.description || ''
   const headerImage = post?.pageCoverThumbnail
     ? post.pageCoverThumbnail
@@ -27,10 +28,8 @@ export default function TitleBar(props) {
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post?.pageIcon} />
             )}
-            {title}
           </h1>
           <p className='title-2 relative leading-loose text-gray-dark z-10'>
-            {description}
           </p>
           {TITLE_BG && (
             <>
