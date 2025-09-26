@@ -11,8 +11,8 @@ export default function TitleBar(props) {
   const { fullWidth, siteInfo } = useGlobal()
 
   // const title = post?.title || siteConfig('TITLE')
-  const title = post?.title || ' '
-  const description = post?.description || ' '
+  const title = post?.title || '<br/>'
+  const description = post?.description || '<br/>'
   const headerImage = post?.pageCoverThumbnail
     ? post.pageCoverThumbnail
     : siteInfo?.pageCover
